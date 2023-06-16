@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: sans-serif;
@@ -10,7 +11,7 @@ body{
 
 /* Centering the page */
 .container{
-    width: 800px;
+    width: 1200px;
     /* margin-left: auto;
     margin-right: auto; */
     margin: 0 auto;
@@ -34,8 +35,10 @@ aside{
     background-color: #f7f7f7;
     border-top: 5px solid #1098ab;
     border-bottom: 5px solid #1098ab;
-    padding:50px 0;
-    width: 500px;
+    padding:50px 40px;
+    /* width: 500px; */
+    
+
 }
 h1, 
 h2, 
@@ -71,6 +74,7 @@ h4{
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
 }
 p{
     font-size: 22px;
@@ -151,9 +155,9 @@ h1::first-letter{
     font-style: normal;
     margin-right: 5px;
 }
-h3 + p::first-line{
+/* h3 + p::first-line{
     color: #eb1212;
-}
+} */
 h2::after{
     content: "TOP";
     background-color: #ffe70e;
@@ -165,5 +169,34 @@ h2::after{
     top: -15px;
     right: -25px;
 
-
+    /* FLOATS */
+}
+.author-image{
+    float: left;
+    margin-bottom: 20px;
+}
+.author{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+h1{
+    float: left;
+}
+nav{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+article{
+width: 825px;
+float: left;
+}
+aside{
+width: 300px;
+float: right;
+}
+footer{
+clear: both;
 }
