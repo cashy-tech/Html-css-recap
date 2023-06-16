@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 h1{
     background-color: #f7f7f7;
@@ -46,6 +47,7 @@ body{
 .amount{
     font-size: 22px;
     font-weight: bold;
+    
 }
 .shipping{
     text-transform: uppercase;
@@ -53,6 +55,10 @@ body{
     color: #777;
     font-weight: bold;
     margin-bottom: 10px;
+    float: right;
+    margin-top: -32px;
+   
+    
 }
 .details{
     list-style: square;
@@ -77,12 +83,15 @@ li{
 .more-info:active{
     text-decoration: none;
 }
+.color{
+    margin-top: 15px;
+}
 .box{
     display: inline-block;
     width: 20px;
     height: 20px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 .black-box{
     background-color: #000;
@@ -117,4 +126,20 @@ li{
 .button:hover{
     color: #000;
     background-color: white;
+}
+/* FLOATS */
+.shoe-img{
+    float: left;
+    margin-right: 40px;
+}
+.amount-info{
+float: left;
+width: 240px;
+padding-top: 20px;
+}
+.product-info{
+float: right;
+width: 240px;
+margin-right: 20px;
+padding-top: -10px;
 }
